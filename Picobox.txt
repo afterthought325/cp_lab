@@ -1,0 +1,38 @@
+	~~~Standard Square~~~
+0 x*** -> N 0   # if there's nothing to the N, go N
+0 N*** -> X 1   # if N is blocked, switch to state 1
+
+# and state 1 goes S as far as possible
+
+1 ***x -> S 1   # if there's nothing to the S, go S
+1 ***S -> X 2   # otherwise, switch to state 0
+
+#Start Second Step, Move West Once
+
+2 **x* -> W 0
+2 **W* -> X 3
+
+#Starting step, Move east
+3 *x** -> E 3
+3 *E** -> X 0
+
+
+	~~~Diamond Box~~~
+0 x*** -> N 0 ## If there isn't a wall to the North, move North
+0 N*** -> X 1 ## If there is a wall to the north, switch to State 1
+
+
+1 ***x -> S 1 ## If there isn't a wall to the South, move South
+1 ***S -> X 2 ## If there is a wall to the South, switch to state 2
+
+2 **x* -> W 0 ## If there isn't a wall to the west move west, then Loop back up in down
+2 **WS -> X 3 ## If there is a wall to the West and South
+
+## This solves the stuck going up the stairs problem, Move north one and then west
+3 x*** -> N 4
+3 NxWS -> E 5 ##If Stuck in a Western Corner, Jump to 5 to loop east till wall
+
+4 x*x* -> W 0 ##Move West after walking up Stairs then Loop Back to Start
+
+5 *x** -> E 5
+5 *E** -> x 0

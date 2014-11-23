@@ -1,0 +1,2 @@
+crap = int(input("--> "))
+

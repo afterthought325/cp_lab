@@ -1,0 +1,28 @@
+Quizzes and Assignments
+90
+100
+80
+70
+90
+100
+
+Lab Assignments
+100
+90
+80
+70
+60
+60
+70
+80
+90
+100
+
+Tests
+90
+100
+85
+
+Final Exam
+95
+90

@@ -1,0 +1,11 @@
+character_info setup: name, hp, damage
+Tyler the Mage, 60, 5
+Ben the Archer, 70, 4
+Mrs. Henderson the Warlock, 80, 3
+Mr. Anderson the Warrior, 90, 2
+Josh the Monk, 100, 1
+Nate the Preist, 50, 6
+Chaise The Assassin, 75, 5
+Zac The Beserker,35,17
+Jackson teh Awsum,100,4
+ChaiseF,75,4
